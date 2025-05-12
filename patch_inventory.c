@@ -4,7 +4,6 @@
 
 int main(int argc, char *argv[])
 {
-    
     const int offsets[] = {
         0x1BB0, // AMMO CROSSBOW
         0x2B20, // MOLOTOV
@@ -54,7 +53,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     char line_buffer[32];
-    int old_value;
+    int old_value, new_value;
     for (int i = 0; i < ITEM_SIZE; ++i)
     {
         if (fscanf(custom_limits_file, "%[^=]=%d\n", line_buffer, custom_limits + i) != 2)
@@ -67,7 +66,11 @@ int main(int argc, char *argv[])
         fread(&old_value, sizeof(int), 1, bin_file);
         fseek(bin_file, offsets[i], SEEK_SET);
         fwrite(custom_limits + i, sizeof(int), 1, bin_file);
-        printf("Updated limit for '%s': from %d -> %d\n", line_buffer, old_value, custom_limits[i]);
+        if (custom_limits[i] != old_value) {
+            printf("Updated limit for '%s': from %d -> %d\n", line_buffer, old_value, custom_limits[i]);
+        } else {
+            printf("No new limit for '%s' (%d)\n", line_buffer, old_value);
+        }
     }
 
     fclose(bin_file);
