@@ -28,8 +28,8 @@ Alternatively, the file "custom_limits.txt" defines the max amount for each item
 You can change the number after the "=" to any integer (whole number) starting at 1. Do not change the order of the items.
 
 After changing the limits, you need to place "ndarc.exe" in the same directory
-as this file. You can then run the "patch_inventory.exe" program. This will create a new ".psarc" file 
-with your custom limits as its name. Copy this file into your mods folder. Make sure to remove
+as this file. You can then run the "patch_inventory.exe" program. This will create a new ".psarc" file.
+Copy this file into your mods folder. Make sure to remove
 any previous files associated with this mod, as they will otherwise conflict. 
 
 ======== CHANGELOG ========
