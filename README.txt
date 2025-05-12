@@ -1,25 +1,36 @@
+This mod gives the player more space for items (such as Molotovs,Shivs, Traps, Medkits, etc.) and more reserve ammo capacity for all weapons.
+
+NOTE: Having more silencers is does not work right now. I'll try to fix it in a future version.
+
 ======== INSTALLATION ========
 
-IMPORTANT: If you're using my (or any) other mod that edits the player-inventory.bin file, please fllow the steps below to resolve conflicts.
+IMPORTANT: If you're using my (or any) other mod that edits the player-inventory.bin file, please follow the steps below to resolve conflicts.
+
+If you're not using any other mods that edit the players inventory, you can simply place the included "more_items.psarc" file in
+your mods folder.
 
 This mod requires the ndmodloader (https://www.nexusmods.com/thelastofuspart2/mods/32).
 
-If you're not using any other mods that edit the players inventory, you can simply place the included "more_items.psarc" file in your mods folder.
 
 ======== MOD CONFLICTS ========
 
 [My previous mod](https://www.nexusmods.com/thelastofuspart2/mods/215) needs to modify the same file as this one. Placing both
-.psarc files in the mod folder won't work. Instead, take the .psarc file that you're using from the last mod (either the one that comes with it
-or a custom one you created yourself) and place it inside "more_items\bin\dc1\". Windows will ask you if you want to replace the file, click 'yes'.
-After that, use the included 'patch_inventory.exe' program. This will require [ndarc](https://www.nexusmods.com/thelastofuspart2/mods/31) to be placed in the same directory as this program.
-This will then create a new .psarc that will have all the modified values for both mods. You can then place this .psarc file 
-in your mods folder, making sure to remove any previous versions of either mod.
+.psarc files in the mod folder won't work. Instead, follow these steps:
+
+    * Download [ndarc](https://www.nexusmods.com/thelastofuspart2/mods/31) and place its executable in this mods directory
+    * Go to the other mods folder and located the "more_resources" directory
+    * Follow that directory and copy the "player-inventory.bin" file
+    * Go back to this mods' folder and into its "more_items/bin/dc1" directory
+    * Replace this "player-inventory.bin" file with the one you just copied from the other mod
+    * Run the included "patch_inventory.exe" program
+    * Place the newly created .psarc file in your mods folder
+
 
 You can copy the "player_inventory.bin" file inside the "original" directory to the "bin/dc1" directory to reset the limits.
 
 During this process you can also define custom limits for each item, as detailed in the section below.
 
-======== CUSTOM RESOURCE LIMITS ========
+======== CUSTOM LIMITS ========
 
 This section is optional if you wish to define custom limits for all resources. By default, this mod
 doubles the normal capacities.
