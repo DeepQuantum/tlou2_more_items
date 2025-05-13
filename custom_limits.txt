@@ -18,3 +18,4 @@ bolt_action_rifle_ammo=18
 mp5_ammo=120
 shotgun_ammo=16
 shotgun_fire_ammo=8
+shotgun_ammo_abby=16
