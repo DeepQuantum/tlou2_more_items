@@ -19,3 +19,4 @@ mp5_ammo=120
 shotgun_ammo=16
 shotgun_fire_ammo=8
 shotgun_ammo_abby=16
+hunting_pistol_ammo=16

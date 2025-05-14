@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
         0x3A90, // AMMO SHOTGUN
         0x6DC0, // AMMO SHOTGUN DRAGONS BREATH
         0x3D00, // AMMO SHOTGUN ABBY
+        0x27E0, // AMMO HUNTING PISTOL
     };
     int custom_limits[sizeof(offsets) / sizeof(int)];
     const int ITEM_SIZE = sizeof(offsets) / sizeof(int);

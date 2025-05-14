@@ -45,4 +45,6 @@ any previous files associated with this mod, as they will otherwise conflict.
 
 ======== CHANGELOG ========
 
+* 1.2.0 | Added Hunting Pistol
+* 1.1.0 | Added Abby's Shotgun
 * 1.0.0 | Release
